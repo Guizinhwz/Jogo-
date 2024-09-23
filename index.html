@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela de Entrada -->
+    <div id="start-screen" class="screen">
+        <img src="img/fundo.jpeg" alt="Fundo" class="background">
+        <h1 class="title">QUIZ GEOGRAFIA</h1>
+        <label for="player-name">VAMOS COMEÇAR, DIGITE O NOME DO PLAYER:</label>
+        <input type="text" id="player-name" placeholder="Seu nome aqui">
+        <button id="start-btn">INICIAR O JOGO</button>
+    </div>
+
+    <!-- Tela do Quiz -->
+    <div id="quiz-screen" class="screen hidden">
+        <img src="img/fundo.jpeg" alt="Fundo" class="background">
+        
+        <!-- Adicionando a estrutura da caixa de perguntas -->
+        <div class="quiz-container">
+            <div id="question" class="question-container"></div>
+            <div id="options" class="options-container"></div>
+        </div>
+
+        <div class="controls">
+            <button id="check-btn">CORRIGIR</button>
+            <button id="next-btn">AVANÇAR</button>
+        </div>
+        <div id="score">PONTUAÇÃO: 0</div>
+    </div>
+
+    <!-- Tela de Créditos -->
+    <div id="credits" class="screen hidden">
+        <img src="img/creditos.jpeg" alt="Créditos" class="background">
+        <h2>AGRADECEMOS A PARTICIPAÇÂO, FEITO PELOS ESTUDANTES:</h2>
+        <p>Guilherme Andrade, Victor Bispo, Matheus, Davi Guedes, Brayan, Gabriel Barboza e Gabriel Marreiro do 2D.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    overflow: hidden; /* Impede o scroll */
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative; /* Necessário para z-index funcionar */
+}
+
+.hidden {
+    display: none;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Fica atrás de outros elementos */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:blue;
+}
+
+.title {
+    font-size: 3em; /* Aumentado para um título maior */
+    margin-bottom: 60px;
+}
+
+#question {
+    font-size: 24px;
+}
+
+#options {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px; /* Tamanho das opções */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 20px; /* Aumentado para melhor visibilidade */
+}
+
+#credits {
+    font-size: 24px; /* Aumentado para a tela de créditos */
+}
